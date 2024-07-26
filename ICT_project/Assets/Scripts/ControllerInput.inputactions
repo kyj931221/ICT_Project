@@ -1,0 +1,34 @@
+{
+    "name": "ControllerInput",
+    "maps": [
+        {
+            "name": "Vr",
+            "id": "341b523e-0115-453d-a8a6-2b2276d3bbd2",
+            "actions": [
+                {
+                    "name": "move",
+                    "type": "Value",
+                    "id": "deb81240-6a1c-45ca-978c-12bed30125cb",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "60de5835-0d90-469f-8dc9-cd1cb6494591",
+                    "path": "<XRController>{LeftHand}/thumbstick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "move",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

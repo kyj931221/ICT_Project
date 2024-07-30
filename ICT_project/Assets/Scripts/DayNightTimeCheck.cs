@@ -9,6 +9,7 @@ public class DayNightTimeCheck : MonoBehaviour
     [SerializeField] Material skybox1;
     [SerializeField] Material skybox2;
     [SerializeField] Material skybox3;
+    [SerializeField] GameObject Fireworks;
     //[SerializeField] GameObject Lamp;
 
     [SerializeField] GameObject directionalLight;   //아침엔 True
@@ -28,7 +29,7 @@ public class DayNightTimeCheck : MonoBehaviour
         while (true)
         {
             //현재 시각 받아옴
-            hours = DateTime.Now.Hour+10;
+            hours = DateTime.Now.Hour;
             Check_Environment();
             if (first)
             {
@@ -44,9 +45,17 @@ public class DayNightTimeCheck : MonoBehaviour
     // 아침,새벽 해지기 전, 밤 
     void Check_Environment()
     {
-        //18~4시까지 가로등 ON
-        //if (hours >= 18 || hours <= 4) Lamp.SetActive(true);
-        //else Lamp.SetActive(false);
+        //18~4시까지 가로등 ON / 불꽃놀이 ON
+        if (hours >= 18 || hours <= 4)
+        {
+            Fireworks.SetActive(true);
+            //Lamp.SetActive(true);
+        }
+        else
+        {
+            Fireworks.SetActive(false);
+           //Lamp.SetActive(false);
+        }
 
         //아침
         if (hours >= 6 && hours <= 18)

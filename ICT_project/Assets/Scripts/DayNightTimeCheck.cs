@@ -29,7 +29,7 @@ public class DayNightTimeCheck : MonoBehaviour
         while (true)
         {
             //현재 시각 받아옴
-            hours = DateTime.Now.Hour;
+            hours = DateTime.Now.Hour+10;
             Check_Environment();
             if (first)
             {

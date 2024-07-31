@@ -10,6 +10,7 @@ public class DayNightTimeCheck : MonoBehaviour
     [SerializeField] Material skybox2;
     [SerializeField] Material skybox3;
     [SerializeField] GameObject Fireworks;
+    [SerializeField] GameObject Dayfestival;
     [SerializeField] GameObject Lamp;
 
     [SerializeField] GameObject directionalLight;   //아침엔 True
@@ -62,6 +63,7 @@ public class DayNightTimeCheck : MonoBehaviour
         {
             directionalLight.SetActive(true);
             RenderSettings.skybox = skybox1;
+            Dayfestival.SetActive(true);
         }
         //새벽, 해지기 전 
         //오후 6시 ~ 9시와 새벽 4시 ~ 6시까지
@@ -74,6 +76,7 @@ public class DayNightTimeCheck : MonoBehaviour
         else if (hours >= 21 || hours <= 4)
         {
             directionalLight.SetActive(false);
+            Dayfestival.SetActive(false);
             RenderSettings.skybox = skybox3;
         }
     }

@@ -12,6 +12,7 @@ public class DayNightTimeCheck : MonoBehaviour
     [SerializeField] GameObject Fireworks;
     [SerializeField] GameObject Dayfestival;
     [SerializeField] GameObject Lamp;
+    [SerializeField] int PlusTime = 0;
 
     [SerializeField] GameObject directionalLight;   //아침엔 True
     int hours;  //시간 
@@ -30,7 +31,7 @@ public class DayNightTimeCheck : MonoBehaviour
         while (true)
         {
             //현재 시각 받아옴
-            hours = DateTime.Now.Hour+10;
+            hours = DateTime.Now.Hour+ PlusTime;
             Check_Environment();
             if (first)
             {

@@ -30,7 +30,7 @@ public class DayNightTimeCheck : MonoBehaviour
         while (true)
         {
             //ÇöÀç ½Ã°¢ ¹Ş¾Æ¿È
-            hours = DateTime.Now.Hour;
+            hours = DateTime.Now.Hour+10;
             Check_Environment();
             if (first)
             {
@@ -70,6 +70,7 @@ public class DayNightTimeCheck : MonoBehaviour
         else if ((hours >= 18 && hours <= 21) || (hours >= 4 && hours <= 6))
         {
             directionalLight.SetActive(false);
+            Dayfestival.SetActive(false);
             RenderSettings.skybox = skybox2;
         }
         //¹ã 

@@ -1251,9 +1251,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   trueSound: {fileID: 0}
   falseSound: {fileID: 0}
-  trueAnswer: {fileID: 0}
-  falseAnswer: []
-  NextBtn: {fileID: 0}
+  trueAnswer: {fileID: 88877404}
+  falseAnswer:
+  - {fileID: 1624206213}
+  - {fileID: 1295831715}
+  NextBtn: {fileID: 17197254}
 --- !u!4 &865676328
 Transform:
   m_ObjectHideFlags: 0

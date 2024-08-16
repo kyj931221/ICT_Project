@@ -5,6 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class ButtonManager : MonoBehaviour
 {
+    public GameObject Map;
+    public GameObject Error;
+
    public void SceneLoad()
     {
         SceneManager.LoadScene("TestScene");
@@ -15,5 +18,25 @@ public class ButtonManager : MonoBehaviour
     {
         Application.Quit();
         Debug.Log("ExitGame");
+    }
+
+    public void MapOpen()
+    {
+        Map.SetActive(true);
+    }
+
+    public void MapClose()
+    { 
+        Map.SetActive(false);
+    }
+
+    public void ErrorOpen()
+    {
+        Error.SetActive(true);
+    }
+
+    public void ErrorClose()
+    {
+        Error.SetActive(false);
     }
 }

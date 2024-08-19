@@ -17,4 +17,5 @@ public class ColiderManager : MonoBehaviour
             animator.SetTrigger("Fin");
         }
     }
+
 }

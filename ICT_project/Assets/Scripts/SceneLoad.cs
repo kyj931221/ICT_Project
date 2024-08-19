@@ -5,24 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class SceneLoad : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
+    public string SceneName;
     private void OnTriggerEnter(Collider other)
     {
         if(other.transform.tag == "Player")
         {
-            SceneManager.LoadScene("");
-            gameObject.SetActive(false);
+            SceneManager.LoadScene(SceneName);
         }
     }
 }

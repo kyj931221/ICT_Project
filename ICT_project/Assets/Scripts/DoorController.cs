@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class DoorController : MonoBehaviour
 {
+    public GameObject door;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -13,6 +15,19 @@ public class DoorController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        gameObject.GetComponent<Rigidbody>().AddForce(new Vector3(0, 1000, 0));
+
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.transform.tag == "Player")
+        {
+            OpenDoor();
+        }
+    }
+
+    public void OpenDoor()
+    {
+        door.SetActive(false);
     }
 }

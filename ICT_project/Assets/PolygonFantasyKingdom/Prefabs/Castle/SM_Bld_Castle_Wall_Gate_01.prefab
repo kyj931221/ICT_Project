@@ -12,9 +12,8 @@ GameObject:
   - component: {fileID: 33662084100649858}
   - component: {fileID: 23643837393001634}
   - component: {fileID: 64612678025592002}
-  - component: {fileID: 915053109152758912}
-  - component: {fileID: 6122598943844893895}
-  - component: {fileID: 8500614363709887290}
+  - component: {fileID: 1198231019635358440}
+  - component: {fileID: 8265567383466806530}
   m_Layer: 6
   m_Name: SM_Bld_Castle_Wall_Gate_Door_L_01
   m_TagString: Untagged
@@ -109,7 +108,7 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 43091475134911724, guid: a221aa3d5972b0049be9c2a9fa82214c, type: 2}
---- !u!54 &915053109152758912
+--- !u!54 &1198231019635358440
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -131,12 +130,12 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 0
+  m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!59 &6122598943844893895
+--- !u!59 &8265567383466806530
 HingeJoint:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -148,11 +147,11 @@ HingeJoint:
   m_Anchor: {x: 0, y: 2, z: 0}
   m_Axis: {x: 1, y: 90, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -17.738983, y: 20.94133, z: 91.32076}
+  m_ConnectedAnchor: {x: -17.738983, y: 22.795008, z: 91.32076}
   serializedVersion: 2
   m_UseSpring: 0
   m_Spring:
-    spring: 100
+    spring: 0
     damper: 0
     targetPosition: 0
   m_UseMotor: 0
@@ -175,18 +174,6 @@ HingeJoint:
   m_EnablePreprocessing: 1
   m_MassScale: 1
   m_ConnectedMassScale: 1
---- !u!114 &8500614363709887290
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1629976476874234}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 32a71b07564ce9f4398647c8c7ac0e9d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1643572010562178
 GameObject:
   m_ObjectHideFlags: 0
@@ -216,13 +203,13 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.000009765625, y: 0, z: 0}
-  m_LocalScale: {x: 0.99999976, y: 1, z: 0.99999976}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4632188838345984}
   - {fileID: 4624892713828200}
   - {fileID: 4663044622253654}
-  - {fileID: 2974930761477676590}
+  - {fileID: 5784171314381622392}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &33439795418751614
@@ -309,9 +296,8 @@ GameObject:
   - component: {fileID: 33254046760324868}
   - component: {fileID: 23075701579112974}
   - component: {fileID: 64610952023434784}
-  - component: {fileID: 3108946031905579246}
-  - component: {fileID: 407088211562220575}
-  - component: {fileID: 5819307240223285052}
+  - component: {fileID: 1831147499059612749}
+  - component: {fileID: 1128415225475109697}
   m_Layer: 6
   m_Name: SM_Bld_Castle_Wall_Gate_Door_R_01
   m_TagString: Untagged
@@ -406,7 +392,7 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 43596034512649482, guid: a128dde8d0fad204cabba80dc71f9876, type: 2}
---- !u!54 &3108946031905579246
+--- !u!54 &1831147499059612749
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -428,12 +414,12 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 0
+  m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!59 &407088211562220575
+--- !u!59 &1128415225475109697
 HingeJoint:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -445,11 +431,11 @@ HingeJoint:
   m_Anchor: {x: 0, y: 2, z: 0}
   m_Axis: {x: 1, y: -90, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -20.661093, y: 20.94133, z: 91.32076}
+  m_ConnectedAnchor: {x: -20.661093, y: 22.795008, z: 91.32076}
   serializedVersion: 2
   m_UseSpring: 0
   m_Spring:
-    spring: 100
+    spring: 0
     damper: 0
     targetPosition: 0
   m_UseMotor: 0
@@ -472,18 +458,6 @@ HingeJoint:
   m_EnablePreprocessing: 1
   m_MassScale: 1
   m_ConnectedMassScale: 1
---- !u!114 &5819307240223285052
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1668009924744278}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 32a71b07564ce9f4398647c8c7ac0e9d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1873637781813318
 GameObject:
   m_ObjectHideFlags: 0
@@ -590,7 +564,7 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 43603933662495724, guid: 4bc020c28b843db46936a3d1f271d578, type: 2}
---- !u!1 &7740353991369941303
+--- !u!1 &1476406188208349245
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -598,8 +572,8 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 2974930761477676590}
-  - component: {fileID: 3787501711430766402}
+  - component: {fileID: 5784171314381622392}
+  - component: {fileID: 6648700854927013006}
   m_Layer: 6
   m_Name: Barrier
   m_TagString: Untagged
@@ -607,28 +581,28 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &2974930761477676590
+--- !u!4 &5784171314381622392
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7740353991369941303}
+  m_GameObject: {fileID: 1476406188208349245}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -2.517, y: 1.81, z: 0.211}
-  m_LocalScale: {x: 3.3405, y: 5.2224874, z: 1}
+  m_LocalScale: {x: 3.3405, y: 5.222487, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4321771328951606}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &3787501711430766402
+--- !u!65 &6648700854927013006
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7740353991369941303}
+  m_GameObject: {fileID: 1476406188208349245}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2

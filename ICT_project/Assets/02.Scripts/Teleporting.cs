@@ -27,6 +27,8 @@ public class Teleporting : MonoBehaviour
 
     private void OnTriggerEnter(Collider Game_Player)
     {
+        Debug.Log(Game_Player.tag);
+
         if(Game_Player.gameObject.tag == "Player")
         {
             Debug.Log("start");

@@ -5,6 +5,8 @@ using UnityEngine;
 public class DoorController : MonoBehaviour
 {
     public GameObject door;
+    public GameObject canvas;
+    public GameObject nextSceneTel;
 
     // Start is called before the first frame update
     void Start()
@@ -19,15 +21,18 @@ public class DoorController : MonoBehaviour
     }
 
     private void OnTriggerEnter(Collider other)
-    {
+    { 
         if(other.transform.tag == "Player")
         {
-            OpenDoor();
+            canvas.SetActive(true);
         }
     }
 
     public void OpenDoor()
     {
         door.SetActive(false);
+        canvas.SetActive(false);
+        gameObject.GetComponent<BoxCollider>().enabled = false;
+        nextSceneTel.SetActive(true);
     }
 }

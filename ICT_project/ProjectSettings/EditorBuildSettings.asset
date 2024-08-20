@@ -6,22 +6,22 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/01.Main_Title_Scene.unity
+    path: Assets/01.Scenes/01.Main_Title_Scene.unity
     guid: df2a33763517c88428158f83b27945e0
   - enabled: 1
-    path: Assets/Scenes/02.Explain_Scene_0.unity
+    path: Assets/01.Scenes/02.Explain_Scene_0.unity
     guid: b859e6aba041f5b47ba23db76084dad9
   - enabled: 1
-    path: Assets/Scenes/03.Intro_Cinemachine.unity
+    path: Assets/01.Scenes/03.Intro_Cinemachine.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
-    path: Assets/Scenes/04.Game_Scene_0.unity
+    path: Assets/01.Scenes/04.Game_Scene_0.unity
     guid: b560ae97b88516148a6c0aae417a4176
   - enabled: 1
-    path: Assets/Scenes/05.Explain_Scene_1.unity
+    path: Assets/01.Scenes/05.Explain_Scene_1.unity
     guid: ee0688047cc315e44b60afb491cb9170
   - enabled: 1
-    path: Assets/Scenes/99.Outtro_Cinemachine.unity
+    path: Assets/01.Scenes/99.Outtro_Cinemachine.unity
     guid: ba154ec063694044081ddf2e1a3ebcdf
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: bfb8c17faf074b444b500f9a2d7b0b11, type: 2}

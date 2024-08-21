@@ -1,15 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class NewBehaviourScript : MonoBehaviour
 {
-    public GameObject score10;
-    public GameObject score20;
+    public GameObject Next_Scene_Teleport;
+    public GameObject Complete_Image;
     public int score;
-    public Text scoreText;
+    public TextMeshProUGUI scoreText;
+    public GameObject Devet_Spawner;
+    public GameObject Devet;
     
     // Start is called before the first frame update
     void Start()
@@ -20,23 +23,28 @@ public class NewBehaviourScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(score>=10 && score < 20)
+        if(score >= 20)
         {
-            score10.SetActive(true);
-        }
-        else if(score >= 20)
-        {
-            score20.SetActive(true);
+            Next_Scene_Teleport.SetActive(true);
+            Complete_Image.SetActive(true);
         }
     }
+
 
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.transform.tag == "Cube")
         {
             Destroy(collision.gameObject);
-            score++;
-            scoreText.text = "Score: " + score;
+            score += 2;
+            scoreText.text = "Score: " + score + " / 20°³";
+
+            if (score % 10 == 0 && score != 0)
+            {
+                Debug.Log("Devet Spawn Start");
+                Instantiate(Devet, Devet_Spawner.transform.position, Quaternion.identity);
+                Debug.Log("Devet Spawn");
+            }
         }
         /*else if (collision.transform.tag == "BigCube")
         {
@@ -58,4 +66,14 @@ public class NewBehaviourScript : MonoBehaviour
             score+=10;
         }
     }*/
+
+    //public void DevetSpawn()
+    //{
+    //    if (score % 10 == 0)
+    //    {
+    //        Debug.Log("Devet Spawn Start");
+    //        Instantiate(Devet, Devet_Spawner.transform.position, Quaternion.identity);
+    //        Debug.Log("Devet Spawn");
+    //    }
+    //}
 }

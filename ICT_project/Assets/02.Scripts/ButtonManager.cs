@@ -7,11 +7,12 @@ public class ButtonManager : MonoBehaviour
 {
     public GameObject Map;
     public GameObject Error;
+    public string SceneName;
 
    public void SceneLoad()
     {
-        SceneManager.LoadScene("TestScene");
-        Debug.Log("LoadScene");
+        SceneManager.LoadScene(SceneName);
+        Debug.Log(SceneName);
     }
 
     public void ExitGame()

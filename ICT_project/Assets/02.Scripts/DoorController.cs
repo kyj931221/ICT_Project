@@ -9,6 +9,7 @@ public class DoorController : MonoBehaviour
     public GameObject canvas;
     public GameObject nextSceneTel;
     public AudioClip openClip;
+    public AudioClip gameStartClip;
 
     AudioSource adSource;
 
@@ -29,6 +30,7 @@ public class DoorController : MonoBehaviour
         if(other.transform.tag == "Player")
         {
             canvas.SetActive(true);
+            adSource.PlayOneShot(gameStartClip);
         }
     }
 

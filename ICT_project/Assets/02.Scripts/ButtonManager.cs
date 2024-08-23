@@ -8,11 +8,22 @@ public class ButtonManager : MonoBehaviour
     public GameObject Map;
     public GameObject Error;
     public string SceneName;
+    public AudioClip mapSound;
+    AudioSource audioSource;
 
-   public void SceneLoad()
+    void Awake()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
+    public void SceneLoad()
     {
         SceneManager.LoadScene(SceneName);
         Debug.Log(SceneName);
+    }
+    public void Home()
+    {
+        SceneManager.LoadScene("01.Main_Title_Scene");
+        Debug.Log("Home");
     }
 
     public void ExitGame()
@@ -23,6 +34,7 @@ public class ButtonManager : MonoBehaviour
 
     public void MapOpen()
     {
+        audioSource.PlayOneShot(mapSound);
         Map.SetActive(true);
     }
 

@@ -15,8 +15,15 @@ public class WordGame : MonoBehaviour
     public GameObject desc;
     public GameObject GameEnd;
     public GameObject playerSpot;
+
+    GameManager gm;
     
     AudioSource adSource;
+
+    private void Awake()
+    {
+        gm = GameManager.instance.GetComponent<GameManager>();
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -69,6 +76,7 @@ public class WordGame : MonoBehaviour
 
     public void OpenDoor()
     {
+        gm.is1stMiniGameClear = true;
         playerSpot.SetActive(true);
         GameEnd.GetComponent<DoorController>().OpenDoor();
     }

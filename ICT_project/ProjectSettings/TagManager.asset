@@ -8,6 +8,7 @@ TagManager:
   - Camera
   - Teleporting
   - Cube
+  - Outtro
   layers:
   - Default
   - TransparentFX

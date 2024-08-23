@@ -5,11 +5,14 @@ using UnityEngine;
 public class MiniGamesStart : MonoBehaviour
 {
     public GameObject MiniGame;
+
+    GameManager gm;
     
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
-        
+        gm = GameManager.instance.GetComponent<GameManager>();
+
     }
 
     // Update is called once per frame
@@ -26,4 +29,5 @@ public class MiniGamesStart : MonoBehaviour
             gameObject.SetActive(false);
         }
     }
+
 }

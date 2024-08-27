@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.TextCore.Text;
 using static Unity.VisualScripting.Member;
 
 public class DoorController : MonoBehaviour
@@ -8,8 +9,10 @@ public class DoorController : MonoBehaviour
     public GameObject door;
     public GameObject canvas;
     public GameObject nextSceneTel;
+    public GameObject character;
     public AudioClip openClip;
     public AudioClip gameStartClip;
+    
 
     AudioSource adSource;
 
@@ -37,6 +40,7 @@ public class DoorController : MonoBehaviour
     public void OpenDoor()
     {
         adSource.PlayOneShot(openClip);
+        character.SetActive(false);
         door.SetActive(false);
         canvas.SetActive(false);
         gameObject.GetComponent<BoxCollider>().enabled = false;

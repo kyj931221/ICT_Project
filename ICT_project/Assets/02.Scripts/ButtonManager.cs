@@ -10,6 +10,7 @@ public class ButtonManager : MonoBehaviour
     public string SceneName;
     public AudioClip mapSound;
     AudioSource audioSource;
+    public AudioClip TutoSound;
 
     void Awake()
     {
@@ -51,5 +52,10 @@ public class ButtonManager : MonoBehaviour
     public void ErrorClose()
     {
         Error.SetActive(false);
+    }
+
+    public void TutoBtn()
+    {
+        audioSource.PlayOneShot(TutoSound);
     }
 }

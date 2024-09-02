@@ -21,6 +21,10 @@ public class ButtonManager : MonoBehaviour
         SceneManager.LoadScene(SceneName);
         Debug.Log(SceneName);
     }
+    public void EndScene()
+    {
+        SceneManager.LoadScene("99.Outtro_Cinemachine");
+    }
     public void Home()
     {
         SceneManager.LoadScene("01.Main_Title_Scene");
